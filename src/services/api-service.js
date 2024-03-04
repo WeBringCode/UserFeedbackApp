@@ -14,10 +14,7 @@ class ApiService {
 	 * Send a POST request to the API to create a new impression
 	 *
 	 * @param {object} context
-	 * @param {string} fingerprint
-	 * @param {string} apiKey
-	 * @param {array} tags
-	 * @param {array} labels
+	 * @param {object} config
 	 *
 	 * @returns {object} response
 	 */
@@ -60,9 +57,8 @@ class ApiService {
 	/**
 	 * Send a POST request to the API to create a new rating
 	 *
-	 * @param {string} fingerprint
 	 * @param {string} impressionId
-	 * @param {number} rating
+	 * @param {number} score
 	 *
 	 * @returns {object} response
 	 */
